@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #346328;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #4a8f39;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #08f900;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: #29df04;
+    transition: color 0.3s ease-in-out;
+}
+
+.forms-container {
+    display: flex;
+    gap: 20px;
+}
+
+.form-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    flex: 1;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+form {
+    margin-bottom: 20px;
+    transition: margin-bottom 0.3s ease-in-out;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    outline: none;
+}
+
+form button {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border:0px solid transparent;
+
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #8b1000;
+    color: #ffffff;
+}
+
+button#dfsBtn {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border:0px solid transparent;
+    border-radius: 4px;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button#dfsBtn:hover {
+    background-color: #c43c2b;
+    border:0px solid transparent;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Animación cuando se pasa el mouse sobre los elementos */
+.container:hover,
+.forms-container:hover .form-box,
+form:hover,
+form input[type="number"]:hover,
+form button:hover,
+button#dfsBtn:hover,
+#resultContainer:hover {
+    transform: translateY(-3px);
+    color: #ffffff;
+}
+
+.container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgb(106, 255, 0);
+    color: #ffffff;
+}
+
+.forms-container:hover .form-box {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgb(81, 255, 0);
+    color: #ffffff;
+}
+form input[type="text"]:hover{
+    transform: translateY(-4px) ;
+    box-shadow: 0 5px 15px rgb(132, 0, 0);
+    color: #710909;
+    
+}

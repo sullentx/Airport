@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva Aerobus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><img src="./images/logo_vbweb.svg" alt="Viva Aerobus Logo" height="50"></h1>
+
+        <div class="forms-container">
+            <div class="form-box">
+                <h2>Agregar Aeropuerto</h2>
+                <form id="addVertexForm">
+                    <label for="vertexName">Ciudad:</label>
+                    <input type="text" id="vertexName" placeholder="Nombre de la ciudad" required>
+                    <button type="submit" id="addVertexBtn">Agregar Aeropuerto</button>
+                </form>
+            </div>
+
+            <div class="form-box">
+                <h2>Comprar Boleto</h2>
+                <form id="addEdgeForm">
+                    <label for="startVertex">Aeropuerto de partida:</label>
+                    <input type="text" id="startVertex" placeholder="Aeropuerto inicial" required>
+                    <label for="endVertex">Aeropuerto de destino:</label>
+                    <input type="text" id="endVertex" placeholder="Aeropuerto final" required>
+                    <label for="weight">Distancia en Kilómetros:</label>
+                    <input type="text" id="weight" placeholder="Distancia en km">
+                    <button type="submit" id="addEdgeBtn">Comprar Boleto</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="dfsBtn">Mostrar Aeropuertos</button>
+        </div>
+
+        <div class="form-box">
+            <h2>Calcular Ruta Más Corta</h2>
+            <form id="shortestPathForm">
+                <label for="startVertexPath">Aeropuerto inicial:</label>
+                <input type="text" id="startVertexPath" placeholder="Aeropuerto inicial" required>
+                <button type="submit" id="shortestPathBtn">Calcular Ruta Más Corta</button>
+            </form>
+        </div>
+
+        <div id="resultContainer"></div>
+    </div>
+
+    <script type="module" src="/src/controllers/Script.mjs"></script>
+</body>
+</html>
